@@ -122,12 +122,7 @@ def tulvataytto(x, y):
         y_min = max(y_min, 0)
         if y_max >= peli["korkeus"]:
             y_max = peli["korkeus"] - 1
-
-        # En saanut omaa alkuperäistä tulvatäyttö -funktiota toimimaan kunnolla, joten
-        # käytin alla olevasta linkistä löytyvää koodinpätkää muutamilla muokkauksilla.
-        # https://github.com/jansipil/Miinaharava/blob/master/miinaharava.py
-        # Koodia käytetty apuna riveille 131 - 148.
-
+            
         for j in range(y_min, y_max + 1):
             for i in range(x_min, x_max + 1):
                 if i == x and j == y:
